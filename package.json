@@ -1,0 +1,25 @@
+{
+	"name": "amaneasano",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@discordjs/rest": "^0.1.0-canary.0",
+		"@discordjs/voice": "^0.7.2",
+		"discord-api-types": "^0.24.0",
+		"discord.js": "^13.3.1",
+		"dotenv": "^10.0.0",
+		"mysql": "^2.18.1",
+		"node-color-log": "^7.0.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.2.0",
+		"nodemon": "^2.0.15"
+	}
+}
