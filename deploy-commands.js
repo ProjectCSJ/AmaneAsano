@@ -1,6 +1,8 @@
 /* eslint-disable max-len */
 /* eslint-disable no-tabs */
 
+const logger = require('node-color-log');
+logger.setLevel('info');
 const dotenv = require('dotenv');
 dotenv.config();
 const fs = require('fs');
@@ -23,16 +25,16 @@ const rest = new REST({ version: '9' }).setToken(process.env.TOKEN);
 
 (async () => {
 	try {
-		console.log('Started refreshing application (/) commands.');
+		logger.debug('Started refreshing application (/) commands.');
 
 		await rest.put(
 			Routes.applicationCommands(process.env.ClientId),
 			{ body: commands },
 		);
 
-		console.log('Successfully reloaded application (/) commands.');
+		logger.debug('Successfully reloaded application (/) commands.');
 	}
 	catch (error) {
-		console.error(error);
+		logger.error(error);
 	}
 })();
