@@ -4,7 +4,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"bot": "node bot.js",
+		"deploy": "node deploy-command.js",
+		"full": "node deploy-command.js && node bot.js",
+		"test": "nodemon bot.js"
 	},
 	"keywords": [],
 	"author": "",
