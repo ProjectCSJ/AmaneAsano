@@ -22,7 +22,7 @@ module.exports = {
 			password: DB_PWD,
 		});
 
-		logger.info(`正在連線到${DB_HOST}...`);
+		logger.info(`Connect to ${DB_HOST}...`);
 
 		DB.connect((err) => {
 			if (err) {throw err;}
