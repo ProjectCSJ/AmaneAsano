@@ -3,6 +3,7 @@
 
 const logger = require('node-color-log');
 logger.setLevel('info');
+logger.setDate(() => (new Date()).toLocaleString());
 const dotenv = require('dotenv');
 dotenv.config();
 const fs = require('fs');

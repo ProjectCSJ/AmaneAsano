@@ -14,7 +14,7 @@ module.exports = {
 			.setColor('RED')
 			.setAuthor('G Cat Beta Version', 'https://cdn.discordapp.com/avatars/882519953100656680/dd87a83415c4f4b77ade768d34e694f4.png', 'https://csj.yeyunstudio.com')
 			.setTitle('🛑 緊急停止装置動作')
-			.setDescription(`<@${interaction.client.user.id}>已被<@826327097945489408>關閉`)
+			.setDescription(`<@${interaction.client.user.id}> has been shutdown by<@826327097945489408>`)
 			.setFooter('Copyright © Project CSJ', 'https://cdn.discordapp.com/avatars/882519953100656680/dd87a83415c4f4b77ade768d34e694f4.png');
 		await interaction.reply({ embeds: [shutdown], ephemeral: true });
 		logger.info(`🛑 ${interaction.client.user.tag} has been shutdown by owner!`);
