@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"bot": "node bot.js",
-		"deploy": "node deploy-command.js",
-		"full": "node deploy-command.js && node bot.js",
+		"deploy": "node deploy-commands.js",
+		"full": "node deploy-commands.js && node bot.js",
 		"test": "nodemon bot.js"
 	},
 	"keywords": [],
