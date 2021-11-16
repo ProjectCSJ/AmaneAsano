@@ -17,8 +17,8 @@ const commandFolders = fs.readdirSync('./commands');
 for (const folder of commandFolders) {
 	const commandFiles = fs.readdirSync(`./commands/${folder}`).filter((file) => file.endsWith('.js'));
 	for (const file of commandFiles) {
-		logger.info(`⏳ Loading command ${folder}/${command.data.name}...`);
 		const command = require(`./commands/${folder}/${file}`);
+		logger.info(`⏳ Loading command ${folder}/${command.data.name}...`);
 		logger.info(`✔️ Command ${folder}/${command.data.name} has been load!`);
 		client.commands.set(command.data.name, command);
 	}
